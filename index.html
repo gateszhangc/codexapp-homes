@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>Codex App — AI Assistant for Work and Code</title>
+  <meta name="description" content="Codex is OpenAI's AI assistant that can read, edit, and run code. It helps you build faster, fix bugs, and understand unfamiliar code. Codex can work on tasks in the background using its own cloud environment." />
+  <meta name="keywords" content="Codex App, OpenAI Codex, AI Assistant, Code Generation AI, AI Coding Agent, Autonomous Coding, Codex Cloud, AI Developer Tool, Code Review AI, AI Pull Request" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="OpenAI" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Codex App — AI Assistant for Work and Code" />
+  <meta property="og:description" content="Codex is OpenAI's AI assistant that can read, edit, and run code. It helps you build faster, fix bugs, and understand unfamiliar code." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://codexapp.ai" />
+  <meta property="og:image" content="og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Codex App — AI Assistant for Work and Code" />
+  <meta name="twitter:description" content="Codex is OpenAI's AI assistant that can read, edit, and run code. It helps you build faster, fix bugs, and understand unfamiliar code." />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://codexapp.ai" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="logo.svg" />
+  <link rel="shortcut icon" type="image/svg+xml" href="logo.svg" />
+  <link rel="apple-touch-icon" href="logo.svg" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Codex App",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Web",
+    "description": "OpenAI's AI assistant that can read, edit, and run code. It helps you build faster, fix bugs, and understand unfamiliar code.",
+    "author": {
+      "@type": "Organization",
+      "name": "OpenAI"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">
+        <a href="/">
+          <img src="logo.svg" alt="Codex App" class="logo-icon" />
+          <span class="logo-text">Codex<span class="logo-accent">App</span></span>
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#features">Features</a>
+        <a href="#workflows">Workflows</a>
+        <a href="#setup">Setup</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <button class="nav-cta" onclick="window.open('https://mirofish.my/', '_blank')">Get Started</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="badge">AI Assistant for Work</div>
+          <h1>Codex <span class="gradient-text">App</span></h1>
+          <p class="hero-subtitle">
+            Codex is OpenAI's AI assistant that can read, edit, and run code. It helps you build faster, fix bugs, and understand unfamiliar code. With Codex cloud, it can work on tasks in the background using its own cloud environment.
+          </p>
+          <div class="hero-actions">
+            <button class="btn-primary" onclick="window.open('https://mirofish.my/', '_blank')">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              Start Using Codex App
+            </button>
+            <a href="#features" class="btn-secondary">
+              Learn More
+            </a>
+          </div>
+          <div class="hero-meta">
+            <span class="meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              Included with Plus, Pro, Business, Edu & Enterprise
+            </span>
+            <span class="meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Background execution for complex tasks
+            </span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="terminal-window">
+            <div class="terminal-header">
+              <span class="terminal-dot red"></span>
+              <span class="terminal-dot yellow"></span>
+              <span class="terminal-dot green"></span>
+              <span class="terminal-title">codex-app ~ %</span>
+            </div>
+            <div class="terminal-body">
+              <div class="line"><span class="prompt">$</span> <span class="cmd">codex init my-project</span></div>
+              <div class="line output">Creating repository: my-project</div>
+              <div class="line output">Connecting to GitHub...</div>
+              <div class="line output"><span class="success">✓</span> Environment configured</div>
+              <div class="line"><span class="prompt">$</span> <span class="cmd">codex run "add user auth"</span></div>
+              <div class="line output">Reading project structure...</div>
+              <div class="line output">Generating auth module...</div>
+              <div class="line output cursor-blink">▌</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview Section -->
+  <section id="overview" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>What is Codex App?</h2>
+        <p>Codex is OpenAI's autonomous AI assistant designed to understand, write, and improve code on your behalf. It runs in a secure cloud environment, connected to your GitHub repositories, and can complete complex engineering tasks end-to-end without manual intervention.</p>
+      </div>
+      <div class="overview-cards">
+        <div class="card">
+          <div class="card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Read & Understand</h3>
+          <p>Codex analyzes your entire codebase — from directory structure to import graphs — building a comprehensive understanding before making any changes.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          </div>
+          <h3>Write & Edit</h3>
+          <p>From adding new features to refactoring existing code, Codex generates clean, well-structured code that follows your project's conventions.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3>Run & Validate</h3>
+          <p>Codex executes code in its cloud sandbox, runs tests, and validates that changes work before proposing them back to you.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3>Background Execution</h3>
+          <p>Delegate tasks that run in the cloud while you stay focused on what matters most. Codex works autonomously and reports back when done.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <h2>Key Features</h2>
+        <p>Codex App combines the power of large language models with a secure cloud runtime to autonomously build, debug, and improve your software.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-number">01</div>
+          <h3>Cloud Environment</h3>
+          <p>Codex operates in its own cloud sandbox with full access to install dependencies, run tests, and execute code safely without affecting your local machine.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-number">02</div>
+          <h3>GitHub Integration</h3>
+          <p>Connect your GitHub account and Codex can read repositories, create branches, make commits, and open pull requests with proposed changes.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-number">03</div>
+          <h3>Multi-Surface Access</h3>
+          <p>Use Codex across multiple surfaces — web app, IDE extension, and terminal — all connected by your account. Start a task in one surface, review in another.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-number">04</div>
+          <h3>Prompt Engineering</h3>
+          <p>Write clearer prompts with constraints, context, and the right level of detail. Codex understands complex multi-step instructions and breaks them down.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-number">05</div>
+          <h3>IDE Extension</h3>
+          <p>Delegate tasks directly from your editor. Kick off a cloud task from VS Code or JetBrains, then monitor progress and apply diffs locally.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-number">06</div>
+          <h3>Enterprise Security</h3>
+          <p>Control whether Codex has internet access from its cloud environment. Enterprise workspaces offer admin-managed security policies and governance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workflows Section -->
+  <section id="workflows" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Common Workflows</h2>
+        <p>Start with proven patterns for delegating tasks, reviewing changes, and turning results into production-ready pull requests.</p>
+      </div>
+      <div class="workflow-steps">
+        <div class="workflow-step">
+          <div class="step-visual">
+            <div class="step-number">1</div>
+          </div>
+          <div class="step-content">
+            <h3>Prompt & Delegate</h3>
+            <p>Describe what you need — from "fix this bug" to "build the authentication flow" — and Codex takes it from there. Include relevant context, constraints, and acceptance criteria for best results.</p>
+          </div>
+        </div>
+        <div class="workflow-step">
+          <div class="step-visual">
+            <div class="step-number">2</div>
+          </div>
+          <div class="step-content">
+            <h3>Background Execution</h3>
+            <p>Codex works autonomously in the cloud. It reads your codebase, makes changes, runs tests, and iterates until the task is complete — all while you continue working on other things.</p>
+          </div>
+        </div>
+        <div class="workflow-step">
+          <div class="step-visual">
+            <div class="step-number">3</div>
+          </div>
+          <div class="step-content">
+            <h3>Review & Iterate</h3>
+            <p>Codex presents changes as clear diffs or pull requests. Review what was changed, run additional checks, request modifications, or merge directly when satisfied.</p>
+          </div>
+        </div>
+        <div class="workflow-step">
+          <div class="step-visual">
+            <div class="step-number">4</div>
+          </div>
+          <div class="step-content">
+            <h3>Deploy & Monitor</h3>
+            <p>Once changes are merged, Codex can help with deployment scripts, monitoring setup, and post-deployment validation — closing the loop from development to production.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Terminal Demo Section -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <h2>Codex in Action</h2>
+        <p>See how Codex handles a real-world task — from a natural language prompt to a complete pull request.</p>
+      </div>
+      <div class="demo-terminal">
+        <div class="terminal-window large">
+          <div class="terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-title">codex-task-42 — zsh</span>
+          </div>
+          <div class="terminal-body">
+            <div class="line"><span class="prompt">$</span> <span class="cmd">codex run "add input validation to the signup form"</span></div>
+            <div class="line output"><span class="dim">→ Reading project: nextjs-blog-platform (4.2k files)</span></div>
+            <div class="line output"><span class="dim">→ Found signup component at src/app/auth/signup.tsx</span></div>
+            <div class="line output"><span class="dim">→ Analyzing validation patterns in existing forms...</span></div>
+            <div class="line spacer"></div>
+            <div class="line"><span class="dim">✓ Created branch: codex/validate-signup-form</span></div>
+            <div class="line"><span class="dim">✓ Modified: src/app/auth/signup.tsx (+42 lines, -8 lines)</span></div>
+            <div class="line"><span class="dim">✓ Created: src/lib/validators/signup.ts (+89 lines)</span></div>
+            <div class="line"><span class="dim">✓ Created: src/__tests__/validators/signup.test.ts (+156 lines)</span></div>
+            <div class="line spacer"></div>
+            <div class="line"><span class="dim">→ Running tests...</span></div>
+            <div class="line output"><span class="success">PASS</span> src/__tests__/validators/signup.test.ts</div>
+            <div class="line output">  ✓ rejects empty email</div>
+            <div class="line output">  ✓ rejects invalid email format</div>
+            <div class="line output">  ✓ requires minimum password length (8 chars)</div>
+            <div class="line output">  ✓ requires uppercase & lowercase in password</div>
+            <div class="line output">  ✓ accepts valid signup input</div>
+            <div class="line spacer"></div>
+            <div class="line"><span class="dim">✓ Opened PR: #142 — Add input validation to signup form</span></div>
+            <div class="line cursor-blink">▌</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Setup Section -->
+  <section id="setup" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Setup & Configuration</h2>
+        <p>Getting started with Codex App takes just a few minutes. Configure your environment and start delegating tasks to your AI assistant.</p>
+      </div>
+      <div class="setup-grid">
+        <div class="setup-card">
+          <div class="setup-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </div>
+          <h4>1. Connect GitHub</h4>
+          <p>Go to Codex App and connect your GitHub account. This gives Codex access to read your repositories and create pull requests.</p>
+        </div>
+        <div class="setup-card">
+          <div class="setup-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          </div>
+          <h4>2. Choose Your Plan</h4>
+          <p>Codex is included with your Plus, Pro, Business, Edu, or Enterprise plan. Enterprise workspaces may require admin setup for governance.</p>
+        </div>
+        <div class="setup-card">
+          <div class="setup-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h4>3. Configure Environment</h4>
+          <p>Select the repository, specify setup steps, and choose which tools Codex should have access to when running tasks in the cloud.</p>
+        </div>
+        <div class="setup-card">
+          <div class="setup-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h4>4. Start Delegating</h4>
+          <p>Tag @codex on issues and pull requests, use the IDE extension, or prompt directly on the Codex App platform to kick off tasks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
+        <p>Everything you need to know about Codex App and its cloud capabilities.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+            <span>What plans include Codex App?</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="faq-answer">
+            <p>Codex is included with your Plus, Pro, Business, Edu, or Enterprise plan. Some Enterprise workspaces may require admin setup before you can access Codex App. Check your plan details to confirm availability.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+            <span>How does Codex handle my code securely?</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="faq-answer">
+            <p>Codex runs in a secure cloud environment isolated from your local machine. You control whether code can access the public internet from the cloud environment. Enterprise workspaces offer additional security policies, governance controls, and admin-managed configurations.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+            <span>Can I use Codex from my IDE?</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Codex App offers an IDE extension that lets you kick off cloud tasks directly from your editor. You can monitor progress in real-time and apply the resulting diffs locally. Supports VS Code and JetBrains IDEs.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+            <span>Can Codex work in the background?</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. With Codex cloud, you can delegate tasks that run autonomously in the background. Codex reads your code, makes changes, runs tests, and reports back — all while you continue working on other priorities.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+            <span>How do I delegate tasks from GitHub?</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="faq-answer">
+            <p>Simply tag @codex on issues and pull requests. Codex will automatically spin up a cloud task, analyze the context, make changes, and propose a solution directly on the thread. This enables seamless AI collaboration within your existing GitHub workflow.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+            <span>Can I control internet access for Codex?</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. You can configure whether Codex is allowed to reach the public internet from its cloud environment. This is an important security control for enterprises handling sensitive codebases. Internet access can be toggled per workspace or managed globally by admins.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to build faster with Codex?</h2>
+        <p>Start delegating tasks to your AI assistant today. Codex handles the implementation while you focus on the big picture.</p>
+        <button class="btn-primary btn-large" onclick="window.open('https://mirofish.my/', '_blank')">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          Get Started with Codex App
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <img src="logo.svg" alt="Codex App" class="logo-icon" />
+            <span class="logo-text">Codex<span class="logo-accent">App</span></span>
+          </div>
+          <p>OpenAI's AI assistant that can read, edit, and run code. It helps you build faster, fix bugs, and understand unfamiliar code.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Product</h4>
+          <a href="#overview">Overview</a>
+          <a href="#features">Features</a>
+          <a href="#workflows">Workflows</a>
+          <a href="#setup">Setup</a>
+        </div>
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <a href="https://developers.openai.com/codex/overview" target="_blank">Documentation</a>
+          <a href="https://developers.openai.com/codex/pricing" target="_blank">Pricing</a>
+          <a href="https://developers.openai.com/codex/enterprise" target="_blank">Enterprise</a>
+          <a href="https://developers.openai.com/changelog" target="_blank">Changelog</a>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <a href="https://openai.com" target="_blank">OpenAI</a>
+          <a href="https://openai.com/about" target="_blank">About</a>
+          <a href="https://openai.com/blog" target="_blank">Blog</a>
+          <a href="https://openai.com/privacy" target="_blank">Privacy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 OpenAI. All rights reserved. Codex App is a product of OpenAI.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
